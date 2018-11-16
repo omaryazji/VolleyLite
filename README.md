@@ -34,12 +34,12 @@ create a new instacne of Request class and set the properities :
                 .DoRequest(new ApiRequest.GetResponse() {
                     @Override
                     public void onSuccess(String result) throws JSONException {
-                        Utility.Toast(getApplicationContext(), result);
+                        // Handle success respose here
                     }
 
                     @Override
                     public void onFail(String msg) {
-                        Utility.Toast(getApplicationContext(), msg);
+                       // Handle error here if request is failed
                     }
                 });
                 
