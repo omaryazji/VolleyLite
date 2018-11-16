@@ -9,7 +9,7 @@ Android Library for simplifying the usage of Volley http networking library
 implementation 'dev.omary.volleylite:volleylite:0.0.1'
 ```
 
-Prepare your parameter as a json object 
+Create new JSONObject for parameters to be posted 
 
         JSONObject parameters = new JSONObject();
 ```java
