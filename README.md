@@ -28,7 +28,7 @@ create a new instacne of Request class and set the properities :
 ```java
     new Request()
        .init(this  /*context*/)
-       .setUrl("YOUR_API_URL") // Api URL
+       .setUrl("YOUR_API_URL")
        .setType(IRequestType.POST /*Request Type*/) 
        .setParams(parameters /*Parameter as json object*/) 
        .DoRequest(new ApiRequest.GetResponse() {
