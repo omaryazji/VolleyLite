@@ -13,15 +13,15 @@ Create new JSONObject for parameters to be posted
 
         JSONObject parameters = new JSONObject();
 ```java
-        try {
-        
-            parameters.put("Name", "Value");
-            parameters.put("Name", "Value");
-            parameters.put("Name", "Value");
-            
-        } catch (JSONException e) {
+  try {
+  
+       parameters.put("Name", "Value");
+       parameters.put("Name", "Value");
+       parameters.put("Name", "Value");
+       
+    } catch (JSONException e) {
             e.printStackTrace();
-        }
+    }
 ```
 
 create a new instacne of Request class and set the properities :
@@ -45,7 +45,3 @@ create a new instacne of Request class and set the properities :
                 });
                 
  ```
-
-
-
-
