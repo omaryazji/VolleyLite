@@ -16,8 +16,7 @@ Create new JSONObject for parameters to be posted
   try {
   
        parameters.put("Name", "Value");
-       parameters.put("Name", "Value");
-       parameters.put("Name", "Value");
+       ,,,
        
     } catch (JSONException e) {
             e.printStackTrace();
