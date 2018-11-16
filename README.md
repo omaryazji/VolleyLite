@@ -9,6 +9,20 @@ Android Library for simplifying the usage of Volley http networking library
 implementation 'dev.omary.volleylite:volleylite:0.0.1'
 ```
 
+Prepare your parameter as a json object 
+
+        JSONObject parameters = new JSONObject();
+```java
+        try {
+        
+            parameters.put("Name", "Value");
+            parameters.put("Name", "Value");
+            parameters.put("Name", "Value");
+            
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+```
 
 create a new instacne of Request class and set the properities :
 
