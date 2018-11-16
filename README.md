@@ -10,12 +10,12 @@ implementation 'dev.omary.volleylite:volleylite:0.0.1'
 ```
 
 
-initialize the PrefUtil  inside your application class :
+create a new instacne of Request class and set the properities :
 
 ```java
         new Request()
                 .init(this)
-                .setUrl("http://46.45.166.102/AndroidApi/tr/api/MobileApi/Login/")
+                .setUrl("YOUR_API_URL")
                 .setType(IRequestType.POST)
                 .setParams(parameters)
                 .DoRequest(new ApiRequest.GetResponse() {
