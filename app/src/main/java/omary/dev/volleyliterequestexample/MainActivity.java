@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         new Request()
-                .init(this)
+                .init(this  /*context*/)
                 .setUrl("http://46.45.166.102/AndroidApi/tr/api/MobileApi/Login/")
                 .setType(IRequestType.POST)
                 .setParams(parameters)
