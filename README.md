@@ -11,6 +11,18 @@ Android Library for simplifying the usage of Volley http networking library
 implementation 'dev.omary.volleylite:volleylite:0.0.1'
 ```
 
+### Maven 
+
+```java
+<dependency>
+  <groupId>dev.omary.volleylite</groupId>
+  <artifactId>volleylite</artifactId>
+  <version>0.0.1</version>
+  <type>pom</type>
+</dependency>
+```
+
+
 Create new JSONObject for parameters to be posted 
 
         JSONObject parameters = new JSONObject();
