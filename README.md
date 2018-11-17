@@ -3,7 +3,7 @@ Android Library for simplifying the usage of Volley http networking library
 
 # Usage
 
-## Gradle 
+### Gradle 
 
  Add dependency to the build.gradle file in the app module:
 
