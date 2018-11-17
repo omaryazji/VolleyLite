@@ -23,7 +23,7 @@ implementation 'dev.omary.volleylite:volleylite:0.0.1'
 ```
 
 
-Create new JSONObject for parameters to be posted 
+2. Create new JSONObject for parameters to be posted 
 
         JSONObject parameters = new JSONObject();
 ```java
@@ -37,7 +37,7 @@ Create new JSONObject for parameters to be posted
     }
 ```
 
-create a new instacne of Request class and set the properities :
+3. create a new instacne of Request class and set the properities :
 
 ```java
     new Request()
