@@ -5,13 +5,13 @@ Android Library for simplifying the usage of Volley http networking library
 
 -  Add dependency to the build.gradle file in the app module:
 
-### Gradle 
+###### Gradle 
 
 ```java
 implementation 'dev.omary.volleylite:volleylite:0.0.1'
 ```
 
-### Maven 
+###### Maven 
 
 ```java
 <dependency>
