@@ -3,9 +3,9 @@ Android Library for simplifying the usage of Volley http networking library
 
 # Usage
 
-### Gradle 
+1.  Add dependency to the build.gradle file in the app module:
 
- Add dependency to the build.gradle file in the app module:
+### Gradle 
 
 ```java
 implementation 'dev.omary.volleylite:volleylite:0.0.1'
