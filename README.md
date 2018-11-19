@@ -40,21 +40,23 @@ implementation 'dev.omary.volleylite:volleylite:0.0.1'
 - create a new instacne of Request class and set the properities :
 
 ```java
+          
     new Request()
-       .init(this  /*context*/)
-       .setUrl("YOUR_API_URL")
-       .setType(IRequestType.POST)  /*Request Type*/
-       .setParams(parameters)   /*Parameter as json object*/
-       .DoRequest(new ApiRequest.GetResponse() {
-               @Override
-               public void onSuccess(String successResponse) throws JSONException {
-                  // Handle success respose here
-               }
+                .init(this  /*context*/)
+                .setUrl("API_URL_HERE")
+                .setType(IRequestType.POST)
+                .setParams(parameters)
+                .setAuth("AUTHENTICATION_USERNAME","AUTHENTICATION_PASSWORD")
+                .DoRequest(new ApiRequest.GetResponse() {
+                    @Override
+                    public void onSuccess(String result) throws JSONException {
+                          // Handle success respose here
+                    }
 
-               @Override
-               public void onFail(String errorResponse) {
-                  // Handle error here if request is failed
-               }
-          });
+                    @Override
+                    public void onFail(String msg) {
+                        // Handle error here if request is failed
+                    }
+                });
                 
  ```
