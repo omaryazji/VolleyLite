@@ -4,15 +4,13 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.support.annotation.NonNull;
-import android.view.View;
 import android.widget.Toast;
 
 public class Utility {
     static ProgressDialog dialog;
 
     /*ToDo: To display a progress dialog with text message*/
-    public static void OpenLoadingDialog(@NonNull Context context, String message) {
+    public static void OpenLoadingDialog(Context context, String message) {
         dialog = new ProgressDialog(context);
         dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         dialog.setMessage(message);
@@ -27,7 +25,7 @@ public class Utility {
             dialog.hide();
     }
     /*ToDo: Check network state */
-    public static boolean isNetworkAvailable(@NonNull Context context) {
+    public static boolean isNetworkAvailable(Context context) {
         ConnectivityManager connectivityManager = (ConnectivityManager) context
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
         if ((connectivityManager
@@ -43,7 +41,7 @@ public class Utility {
         }
     }
 
-    public static void Toast(@NonNull Context context, String message) {
+    public static void Toast(Context context, String message) {
         Toast toast = Toast.makeText(context, message, Toast.LENGTH_LONG);
         toast.show();
     }
