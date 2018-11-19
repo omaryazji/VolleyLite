@@ -37,9 +37,10 @@ public class MainActivity extends AppCompatActivity {
 
         new Request()
                 .init(this  /*context*/)
-                .setUrl("http://46.45.166.102/AndroidApi/tr/api/MobileApi/Login/")
+                .setUrl("API_URL_HERE")
                 .setType(IRequestType.POST)
                 .setParams(parameters)
+                .setAuth("AUTHENTICATION_USERNAME","AUTHENTICATION_PASSWORD")
                 .DoRequest(new ApiRequest.GetResponse() {
                     @Override
                     public void onSuccess(String result) throws JSONException {

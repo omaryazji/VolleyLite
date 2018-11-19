@@ -23,7 +23,7 @@ import java.util.Map;
 public class ApiRequest {
 
 
-    public static void Request(final Context context, String url, JSONObject params, int methodType, final GetResponse onCallBack) {
+    public static void Request(final Context context, String url, JSONObject params, int methodType, final String username, final String password, final GetResponse onCallBack) {
         final RequestQueue queue = Volley.newRequestQueue(context);
 
         if (Utility.isNetworkAvailable(context)) {
@@ -51,21 +51,24 @@ public class ApiRequest {
 
                     onCallBack.onFail(error.toString());
                 }
-            });
-
-
-         /*   {
+            }) {
                 @Override
-                public Map<String, String> getHeaders () throws AuthFailureError {
-                Map<String, String> headers = new HashMap<>();
-                String credentials = "username:password";
-                String auth = "Basic "
-                        + Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
-                headers.put("Content-Type", "application/json");
-                headers.put("Authorization", auth);
-                return headers;
-            }
-            } ;*/
+                public Map<String, String> getHeaders() throws AuthFailureError {
+                    Map<String, String> headers = new HashMap<>();
+
+                    if (!username.isEmpty() && !password.isEmpty()) {
+                        String credentials = username + ":" + password;
+                        String auth = "Basic "
+                                + Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
+                        /*headers.put("Content-Type", "application/json");*/
+                        headers.put("Authorization", auth);
+                        return headers;
+                    } else {
+                        return headers;
+                    }
+
+                }
+            };
 
             jsObjRequest.setRetryPolicy(new DefaultRetryPolicy(50000, 5, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
             queue.add(jsObjRequest);

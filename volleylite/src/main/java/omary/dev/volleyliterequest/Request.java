@@ -13,6 +13,7 @@ public class Request implements IRequest {
     String url;
     int methodType;
     JSONObject params;
+    String Username= "",Password = "";
 
     @Override
     public IRequest init(Context context) {
@@ -38,10 +39,18 @@ public class Request implements IRequest {
         return this;
     }
 
+
+    @Override
+    public IRequest setAuth(String username,String password) {
+        this.Username = username;
+        this.Password = password;
+        return this;
+    }
+
     @Override
     public void DoRequest(final ApiRequest.GetResponse onCallBack) {
 
-        ApiRequest.Request(this.context, this.url, this.params, this.methodType, new ApiRequest.GetResponse() {
+        ApiRequest.Request(this.context, this.url, this.params, this.methodType,this.Username,this.Password, new ApiRequest.GetResponse() {
             @Override
             public void onSuccess(String result) throws JSONException {
 
