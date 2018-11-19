@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 .setUrl("API_URL_HERE")
                 .setType(IRequestType.POST)
                 .setParams(parameters)
-                .setAuth("AUTHENTICATION_USERNAME","AUTHENTICATION_PASSWORD")
+                .setAuth(" " /*AUTHENTICATION_USERNAME*/ ,"" /*AUTHENTICATION_PASSWORD*/)
                 .DoRequest(new ApiRequest.GetResponse() {
                     @Override
                     public void onSuccess(String result) throws JSONException {

@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 25
+    compileSdkVersion 27
 
 
 
@@ -50,7 +50,7 @@ ext {
     siteUrl = 'https://github.com/OmarYAZEJI/VolleyLite'
     gitUrl = 'https://github.com/OmarYAZEJI/VolleyLite.git'
 
-    libraryVersion = '0.0.1'
+    libraryVersion = '0.0.2'
 
     developerId = 'omary'
     developerName = 'Omar YAZEJI'
