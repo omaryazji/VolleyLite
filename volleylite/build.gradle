@@ -50,7 +50,7 @@ ext {
     siteUrl = 'https://github.com/OmarYAZEJI/VolleyLite'
     gitUrl = 'https://github.com/OmarYAZEJI/VolleyLite.git'
 
-    libraryVersion = '0.0.3'
+    libraryVersion = '0.0.1'
 
     developerId = 'omary'
     developerName = 'Omar YAZEJI'

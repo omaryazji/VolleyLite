@@ -2,8 +2,6 @@ package omary.dev.volleyliterequest;
 
 import android.content.Context;
 
-import com.google.gson.JsonObject;
-
 import org.json.JSONObject;
 
 import org.json.JSONException;
