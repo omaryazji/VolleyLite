@@ -95,3 +95,10 @@ JSONObject parameters = new JSONObject(params);
              });
                 
  ```
+
+
+# Properties
+| Property      | Description |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
