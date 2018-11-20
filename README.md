@@ -60,12 +60,12 @@ JSONObject parameters = new JSONObject(params);
           .setAuth(" " /*AUTHENTICATION_USERNAME*/ ,"" /*AUTHENTICATION_PASSWORD*/)
           .DoRequest(new ApiRequest.GetResponse() {
                     @Override
-                    public void onSuccess(String result) throws JSONException {
+                    public void onSuccess(String successResponse) throws JSONException {
                           // Handle success respose here
                     }
 
                     @Override
-                    public void onFail(String msg) {
+                    public void onFail(String errorResponse) {
                         // Handle error here if request is failed
                     }
              });
