@@ -42,12 +42,12 @@ implementation 'dev.omary.volleylite:volleylite:0.0.1'
 ```java
           
     new Request()
-                .init(this  /*context*/)
-                .setUrl("API_URL_HERE")
-                .setType(IRequestType.POST)
-                .setParams(parameters)
-                .setAuth(" " /*AUTHENTICATION_USERNAME*/ ,"" /*AUTHENTICATION_PASSWORD*/)
-                .DoRequest(new ApiRequest.GetResponse() {
+          .init(this  /*context*/)
+          .setUrl("API_URL_HERE")
+          .setType(IRequestType.POST)
+          .setParams(parameters)
+          .setAuth(" " /*AUTHENTICATION_USERNAME*/ ,"" /*AUTHENTICATION_PASSWORD*/)
+          .DoRequest(new ApiRequest.GetResponse() {
                     @Override
                     public void onSuccess(String result) throws JSONException {
                           // Handle success respose here
@@ -57,6 +57,6 @@ implementation 'dev.omary.volleylite:volleylite:0.0.1'
                     public void onFail(String msg) {
                         // Handle error here if request is failed
                     }
-                });
+             });
                 
  ```
