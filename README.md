@@ -48,7 +48,7 @@ JSONObject parameters = new JSONObject(params);
 
 
 
-- Ceate a new instacne of Request class and set the properities :
+- Ceate an instacne of Request class and set the properities :
 
 
 ###### Get Request 
