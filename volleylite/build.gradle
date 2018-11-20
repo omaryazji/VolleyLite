@@ -45,7 +45,7 @@ ext {
     libraryName = 'VolleyLite'
     artifact = 'volleylite'
 
-    libraryDescription = 'Android Library for simplifying the usage of Volley http networking library'
+    libraryDescription = 'Android Library for simplifying APIs requests from android apps based on Volley http networking library'
 
     siteUrl = 'https://github.com/OmarYAZEJI/VolleyLite'
     gitUrl = 'https://github.com/OmarYAZEJI/VolleyLite.git'
