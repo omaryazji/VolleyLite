@@ -33,7 +33,7 @@ implementation 'dev.omary.volleylite:volleylite:0.0.1'
  ,,
  ,,
 ```
-Or
+Or use HashMap as below
 
 ```java
 
