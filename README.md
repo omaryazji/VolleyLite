@@ -38,7 +38,7 @@ Or
 ```java
 
 Map<String, String> params = new HashMap();
-params.put("Username_", userName);
+params.put("Name", /*value*/);
 ,,
 ,,
 ,,
