@@ -25,7 +25,11 @@ implementation 'dev.omary.volleylite:volleylite:0.0.1'
 
 - Create new JSONObject for parameters for post methods
 ```java
-        JSONObject parameters = new JSONObject();
+
+ JSONObject parameters = new JSONObject();
+```
+
+```java
 
   try {
   
