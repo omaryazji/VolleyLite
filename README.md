@@ -103,9 +103,10 @@ JSONObject parameters = new JSONObject(params);
 |`init(context)` | Context  |  context of current state    |
 |`setUrl(url)`    | String |  Api URL|
 |`setType(requestType)`    | (int) IRequestType |  choose type from IRequestType interface|
-|`setAuth(username,password)`    | String , String  |  Authentication ussername and password 
-|`setParams(parameters)`    | JSONObject  |  check **step 2** form more details
-|`DoRequest()`    |   |  Used for Handling Responses
+|`setAuth(username,password)`    | String , String  |  Authentication ussername and password |
+|`setParams(parameters)`    | JSONObject  |  check **step 2** form more details|
+|`DoRequest()`    |   |  Used for Handling Responses  <br> `onSuccess()`  method will invoked if the request is successfully processed  and  will return response as string. can be convert to json if needed  <br>`onFail()` method will invoked if the request is faild and will return message as string|
+
 
 
 
