@@ -98,8 +98,8 @@ JSONObject parameters = new JSONObject(params);
 
 
 # Functions
-| Name      | Parameter Type | Description   |    mandatory | 
-|  :---:   |  :-----:  |   :---:  |:---:  |
+| Name      |  Parameter Type  | Description   |    mandatory | 
+|  :---:   |  :----------:  |   :---:  |:---:  |
 |`init(context)` | Context  |  context of current state    |YES|
 |`setUrl(url)`    | String |  Api URL|YES|
 |`setType(requestType)`    | (int) IRequestType |  choose type from IRequestType interface|YES|
