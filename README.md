@@ -27,19 +27,12 @@ implementation 'dev.omary.volleylite:volleylite:0.0.1'
 ```java
 
  JSONObject parameters = new JSONObject();
+ 
+ parameters.put("Name", "Value");
+ ,,,
 ```
 
-```java
 
-  try {
-  
-       parameters.put("Name", "Value");
-       ,,,
-       
-    } catch (JSONException e) {
-            e.printStackTrace();
-    }
-```
 
 - create a new instacne of Request class and set the properities :
 
