@@ -97,8 +97,8 @@ JSONObject parameters = new JSONObject(params);
  ```
 
 
-# Properties
-| Property      | Description |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+# Functions
+| Property      | Parameter Type | Description   |   
+| -------------  | ------------- |  ------------- |
+| init(context)  | Context  |  context of current state    |
+| setUrl(url)   | String |  Api URL|
