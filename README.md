@@ -99,6 +99,6 @@ JSONObject parameters = new JSONObject(params);
 
 # Functions
 | Property      | Parameter Type | Description   |   
-| -------------  | ------------- |  ------------- |
+|  :---:   |  :---:  |   :---:  |
 | init(context)  | Context  |  context of current state    |
 | setUrl(url)   | String |  Api URL|
