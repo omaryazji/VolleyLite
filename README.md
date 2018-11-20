@@ -29,7 +29,21 @@ implementation 'dev.omary.volleylite:volleylite:0.0.1'
  JSONObject parameters = new JSONObject();
  
  parameters.put("Name", "Value");
- ,,,
+ ,,
+ ,,
+ ,,
+```
+Or
+
+```java
+
+Map<String, String> params = new HashMap();
+params.put("Username_", userName);
+,,
+,,
+,,
+JSONObject parameters = new JSONObject(params);
+
 ```
 
 
