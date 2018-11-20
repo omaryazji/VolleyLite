@@ -1,5 +1,5 @@
 # VolleyLite
-Android Library for simplifying the usage of Volley http networking library
+Android Library for simplifying APIs requests from android apps based on Volley http networking library
 
 # Usage
 
