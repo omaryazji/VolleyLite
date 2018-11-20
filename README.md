@@ -104,5 +104,7 @@ JSONObject parameters = new JSONObject(params);
 |`setUrl(url)`    | String |  Api URL|
 |`setType(requestType)`    | (int) IRequestType |  choose type from IRequestType interface|
 |`setAuth(username,password)`    | String Username, String password |  Authentication ussername and password 
+|`setParams(parameters)`    | JSONObject parameters |  check **step 2** form more details
+
 
 
