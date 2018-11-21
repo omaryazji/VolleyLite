@@ -59,7 +59,7 @@ JSONObject parameters = new JSONObject(params);
           .setUrl("API_URL_HERE")
           .setType(IRequestType.GET)
           .setAuth(" " /*AUTHENTICATION_USERNAME*/ ,"" /*AUTHENTICATION_PASSWORD*/)
-          .DoRequest(new ApiRequest.GetResponse() {
+          .DoRequest(new Request.GetResponse() {
                     @Override
                     public void onSuccess(String successResponse) throws JSONException {
                           // Handle success respose here
@@ -82,7 +82,7 @@ JSONObject parameters = new JSONObject(params);
           .setType(IRequestType.POST)
           .setParams(parameters)
           .setAuth(" " /*AUTHENTICATION_USERNAME*/ ,"" /*AUTHENTICATION_PASSWORD*/)
-          .DoRequest(new ApiRequest.GetResponse() {
+          .DoRequest(new Request.GetResponse() {
                     @Override
                     public void onSuccess(String successResponse) throws JSONException {
                           // Handle success respose here
