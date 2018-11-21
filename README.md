@@ -8,16 +8,16 @@ Android Library for simplifying APIs requests from android apps based on Volley 
 ###### Gradle 
 
 ```java
-implementation 'dev.omary.volleylite:volleylite:0.0.1'
+    implementation 'lib.omry.volleylite:volleylite:0.0.2'
 ```
 
 ###### Maven 
 
 ```java
 <dependency>
-  <groupId>dev.omary.volleylite</groupId>
+  <groupId>lib.omry.volleylite</groupId>
   <artifactId>volleylite</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <type>pom</type>
 </dependency>
 ```
@@ -54,7 +54,7 @@ JSONObject parameters = new JSONObject(params);
 ###### Get Request 
 ```java
           
-    new Request()
+    new ApiRequest()
           .init(this  /*context*/)
           .setUrl("API_URL_HERE")
           .setType(IRequestType.GET)
@@ -76,7 +76,7 @@ JSONObject parameters = new JSONObject(params);
 
 ```java
           
-    new Request()
+    new ApiRequest()
           .init(this  /*context*/)
           .setUrl("API_URL_HERE")
           .setType(IRequestType.POST)
