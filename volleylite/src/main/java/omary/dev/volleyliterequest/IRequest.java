@@ -9,7 +9,7 @@ public interface IRequest {
     IRequest setType(int type);
     IRequest setParams(JSONObject params);
     IRequest setAuth(String Username,String Password);
-    void DoRequest(final ApiRequest.GetResponse onCallBack);
+    void DoRequest(final Request.GetResponse onCallBack);
 
 }
 

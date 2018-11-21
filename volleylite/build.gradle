@@ -39,9 +39,9 @@ dependencies {
 
 ext {
     bintrayRepo = 'maven'
-    bintrayName = 'VolleyLite'
+    bintrayName = 'VolleyLites'
 
-    publishedGroupId = 'dev.omary.volleylite'
+    publishedGroupId = 'lib.omry.volleylite'
     libraryName = 'VolleyLite'
     artifact = 'volleylite'
 

@@ -3,17 +3,12 @@ package omary.dev.volleyliterequestexample;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.google.gson.JsonObject;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import omary.dev.volleyliterequest.ApiRequest;
-import omary.dev.volleyliterequest.IRequestType;
 import omary.dev.volleyliterequest.Request;
+import omary.dev.volleyliterequest.IRequestType;
+import omary.dev.volleyliterequest.ApiRequest;
 import omary.dev.volleyliterequest.Utility;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,13 +30,13 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        new Request()
+        new ApiRequest()
                 .init(this  /*context*/)
                 .setUrl("API_URL_HERE")
                 .setType(IRequestType.POST)
                 .setParams(parameters)
                 .setAuth(" " /*AUTHENTICATION_USERNAME*/ ,"" /*AUTHENTICATION_PASSWORD*/)
-                .DoRequest(new ApiRequest.GetResponse() {
+                .DoRequest(new Request.GetResponse() {
                     @Override
                     public void onSuccess(String result) throws JSONException {
                         Utility.Toast(getApplicationContext(), result);

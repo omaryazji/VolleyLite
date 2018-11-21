@@ -1,82 +1,65 @@
 package omary.dev.volleyliterequest;
 
 import android.content.Context;
-import android.util.Base64;
-import com.android.volley.AuthFailureError;
-import com.android.volley.DefaultRetryPolicy;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.HashMap;
-import java.util.Map;
+import org.json.JSONException;
 
-public class ApiRequest {
+public class ApiRequest implements IRequest {
+    Context context;
+    String url;
+    int methodType;
+    JSONObject params;
+    String Username= "",Password = "";
 
-
-    public static void Request(final Context context, String url, JSONObject params, int methodType, final String username, final String password, final GetResponse onCallBack) {
-        final RequestQueue queue = Volley.newRequestQueue(context);
-
-        if (Utility.isNetworkAvailable(context)) {
-
-            Utility.OpenLoadingDialog(context, "");
-
-            final JsonObjectRequest jsObjRequest = new JsonObjectRequest(methodType, url, params, new Response.Listener<JSONObject>() {
-                @Override
-                public void onResponse(JSONObject response) {
-                    // TODO Auto-generated method stub
-
-                    Utility.HideLoading();
-
-                    try {
-                        onCallBack.onSuccess(response.toString());
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }, new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    // TODO Auto-generated method stub
-                    Utility.HideLoading();
-
-                    onCallBack.onFail(error.toString());
-                }
-            }) {
-                @Override
-                public Map<String, String> getHeaders() throws AuthFailureError {
-                    Map<String, String> headers = new HashMap<>();
-
-                    if (!username.isEmpty() && !password.isEmpty()) {
-                        String credentials = username + ":" + password;
-                        String auth = "Basic "
-                                + Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
-                        /*headers.put("Content-Type", "application/json");*/
-                        headers.put("Authorization", auth);
-                        return headers;
-                    } else {
-                        return headers;
-                    }
-
-                }
-            };
-
-            jsObjRequest.setRetryPolicy(new DefaultRetryPolicy(50000, 5, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-            queue.add(jsObjRequest);
-        } else {
-            Utility.Toast(context, "Please check your internet connection");
-        }
+    @Override
+    public IRequest init(Context context) {
+        this.context = context;
+        return this;
     }
 
-    public interface GetResponse {
-        void onSuccess(String result) throws JSONException;
-
-        void onFail(String msg);
+    @Override
+    public IRequest setUrl(String url) {
+        this.url = url;
+        return this;
     }
 
+    @Override
+    public IRequest setType(int type) {
+        this.methodType = type;
+        return this;
+    }
+
+    @Override
+    public IRequest setParams(JSONObject params) {
+        this.params = params;
+        return this;
+    }
+
+
+    @Override
+    public IRequest setAuth(String username,String password) {
+        this.Username = username;
+        this.Password = password;
+        return this;
+    }
+
+    @Override
+    public void DoRequest(final Request.GetResponse onCallBack) {
+
+        Request.Request(this.context, this.url, this.params, this.methodType,this.Username,this.Password, new Request.GetResponse() {
+            @Override
+            public void onSuccess(String result) throws JSONException {
+
+                onCallBack.onSuccess(result);
+            }
+
+            @Override
+            public void onFail(String msg) {
+                onCallBack.onFail(msg);
+
+            }
+        });
+    }
 }
