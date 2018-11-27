@@ -27,9 +27,9 @@ Android Library for simplifying APIs requests from android apps based on Volley 
 ```java
 
  JSONObject parameters = new JSONObject();
- 
- parameters.put("Name", /*value*/);
  ,,
+ ,,
+  parameters.put("Name", /*value*/);
  ,,
  ,,
 ```
@@ -38,8 +38,9 @@ Or use HashMap as below
 ```java
 
 Map<String, String> params = new HashMap();
-params.put("Name", /*value*/);
 ,,
+,,
+params.put("Name", /*value*/);
 ,,
 ,,
 JSONObject parameters = new JSONObject(params);
