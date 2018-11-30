@@ -116,5 +116,5 @@ JSONObject parameters = new JSONObject(params);
 
 
 
-
+[ ![Download](https://api.bintray.com/packages/omary/maven/VolleyLites/images/download.svg) ](https://bintray.com/omary/maven/VolleyLites/_latestVersion)
 
