@@ -3,13 +3,15 @@ Android Library for simplifying APIs requests from android apps based on Volley 
 
 # Usage
 
-- **Step1**  Add dependency to the build.gradle file in the app module:
-
-###### Gradle 
-
+- **Step1**  Add Volley   dependency to the build.gradle file in the app module:
 ```java
     implementation 'com.android.volley:volley:1.1.0'
 ```
+- **Step2**  Add dependency to the build.gradle file in the app module:
+
+###### Gradle 
+
+
 
 ```java
     implementation 'lib.omry.volleylite:volleylite:0.0.2'
@@ -27,7 +29,7 @@ OR
 ```
 
 
-- **Step2**  Create new JSONObject for parameters for post methods
+- **Step3**  Create new JSONObject for parameters for post methods
 ```java
 
  JSONObject parameters = new JSONObject();
@@ -53,7 +55,7 @@ JSONObject parameters = new JSONObject(params);
 
 
 
-- **Step3** Ceate an instacne of Request class and set the properities :
+- **Step4** Ceate an instacne of Request class and set the properities :
 
 
 ###### Get Request 
