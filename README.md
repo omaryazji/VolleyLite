@@ -10,7 +10,7 @@ Android Library for simplifying APIs requests from android apps based on Volley 
 ```java
     implementation 'lib.omry.volleylite:volleylite:0.0.2'
 ```
-
+OR
 ###### Maven 
 
 ```java
