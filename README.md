@@ -23,7 +23,7 @@ OR
 <dependency>
   <groupId>lib.omry.volleylite</groupId>
   <artifactId>volleylite</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.3</version>
   <type>pom</type>
 </dependency>
 ```
