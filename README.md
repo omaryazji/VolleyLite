@@ -8,6 +8,10 @@ Android Library for simplifying APIs requests from android apps based on Volley 
 ###### Gradle 
 
 ```java
+    implementation 'com.android.volley:volley:1.1.0'
+```
+
+```java
     implementation 'lib.omry.volleylite:volleylite:0.0.2'
 ```
 OR
