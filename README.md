@@ -55,7 +55,7 @@ JSONObject parameters = new JSONObject(params);
 
 
 
-- **Step4** Ceate an instacne of Request class and set the properities :
+- **Step4** Ceate an instacne of ApiRequest class and set the properities :
 
 
 ###### Get Request 
